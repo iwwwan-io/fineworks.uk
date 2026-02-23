@@ -12,11 +12,15 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Fineworks.uk - Bespoke Construction & Renovation",
-  description: "Premium bespoke construction and renovation company in the UK. Residential, Commercial, and Project Management.",
+  description: "Premium bespoke construction and renovation company in the UK. Residential Construction, Extensions & Renovations, Commercial Fit-Out, and Project Management.",
   icons: {
     icon: '/favicon.ico',
   },
 };
+
+import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
+import { CookieConsent } from "@/components/layout/cookie-consent";
 
 export default function RootLayout({
   children,
@@ -30,7 +34,10 @@ export default function RootLayout({
         inter.variable,
         playfair.variable
       )}>
+        <Header />
         {children}
+        <Footer />
+        <CookieConsent />
       </body>
     </html>
   );

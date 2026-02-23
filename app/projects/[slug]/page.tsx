@@ -1,5 +1,3 @@
-import { Header } from "@/components/layout/header"
-import { Footer } from "@/components/layout/footer"
 import { projects } from "@/data/projects"
 import { notFound } from "next/navigation"
 import Image from "next/image"
@@ -34,8 +32,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
   return (
     <main className="flex flex-col min-h-screen">
-      <Header />
-
       {/* Hero Image */}
       <div className="relative h-[60vh] md:h-[70vh] w-full">
         <Image
@@ -86,7 +82,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
               <div className="bg-primary text-primary-foreground p-8 rounded-lg">
                 <h3 className="font-serif text-xl font-bold mb-4">Interested in something similar?</h3>
                 <p className="text-white/80 mb-6 text-sm">
-                  We specialize in bespoke projects like {project.title}. Let's discuss your vision.
+                  We specialize in bespoke projects like {project.title}. Let&apos;s discuss your vision.
                 </p>
                 <Button asChild variant="secondary" className="w-full">
                   <Link href="/contact">Book Consultation</Link>
@@ -142,7 +138,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         </div>
       </section>
 
-      <Footer />
     </main>
   )
 }

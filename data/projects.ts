@@ -1,7 +1,7 @@
 export interface Project {
   id: string;
   title: string;
-  category: "Residential" | "Commercial";
+  category: "Residential Construction" | "Extensions & Renovations" | "Commercial Fit-Out" | "Project Management";
   location: string;
   summary: string;
   image: string;
@@ -20,7 +20,7 @@ export const projects: Project[] = [
   {
     id: "1",
     title: "Kensington Townhouse",
-    category: "Residential",
+    category: "Residential Construction",
     location: "Kensington, London",
     summary: "A complete refurbishment and basement excavation of a Grade II listed townhouse.",
     image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
@@ -43,7 +43,7 @@ export const projects: Project[] = [
   {
     id: "2",
     title: "Mayfair Office Suite",
-    category: "Commercial",
+    category: "Commercial Fit-Out",
     location: "Mayfair, London",
     summary: "High-end Cat B fit-out for a boutique investment firm.",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
   {
     id: "3",
     title: "Surrey Extension",
-    category: "Residential",
+    category: "Extensions & Renovations",
     location: "Cobham, Surrey",
     summary: "Contemporary glass and timber extension to a detached family home.",
     image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=2070&auto=format&fit=crop",
@@ -85,7 +85,7 @@ export const projects: Project[] = [
   {
     id: "4",
     title: "Shoreditch Loft Conversion",
-    category: "Residential",
+    category: "Extensions & Renovations",
     location: "Shoreditch, London",
     summary: "Industrial-chic renovation of a former warehouse space.",
     image: "https://images.unsplash.com/photo-1534576571475-35e78dd03fdf?q=80&w=1145&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -105,7 +105,7 @@ export const projects: Project[] = [
    {
     id: "5",
     title: "City Law Firm HQ",
-    category: "Commercial",
+    category: "Commercial Fit-Out",
     location: "City of London",
     summary: "Full floor fit-out for a tier-one law firm.",
     image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop",
@@ -119,7 +119,7 @@ export const projects: Project[] = [
     description: "Detailed to the highest specification, this project delivered a world-class working environment. Features include high-acoustic performance meeting suites, a client entertainment lounge with a bar, and a flexible seminar space. The logistics of working in a busy city center tower required meticulous planning and coordination.",
     gallery: [
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2069&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2069&auto=crop",
       "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop"
     ]
   }

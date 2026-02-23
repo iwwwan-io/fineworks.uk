@@ -1,15 +1,13 @@
 "use client"
 
 import { useState } from "react"
-import { Header } from "@/components/layout/header"
-import { Footer } from "@/components/layout/footer"
 import { projects } from "@/data/projects"
 import Link from "next/link"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
 
-const categories = ["All", "Residential", "Commercial"]
+const categories = ["All", "Residential Construction", "Extensions & Renovations", "Commercial Fit-Out", "Project Management"]
 
 export default function ProjectsPage() {
   const [activeCategory, setActiveCategory] = useState("All")
@@ -20,8 +18,6 @@ export default function ProjectsPage() {
 
   return (
     <main className="flex flex-col min-h-screen">
-      <Header />
-
       {/* Hero */}
       <section className="pt-32 pb-12 bg-background border-b border-border/40">
         <div className="container mx-auto px-4 md:px-6">
@@ -104,7 +100,6 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      <Footer />
     </main>
   )
 }
