@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
-const MotionImage = motion(Image)
+const MotionImage = motion.create(Image)
 
 
 const navigation = [
